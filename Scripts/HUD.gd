@@ -46,8 +46,8 @@ var offered_upgrades: Array[String] = []
 # died message
 @onready var died_message: Control = $GUI/Died
 
-# allow player to purchase item
-
+# bad coding
+var first = true
 
 ######### my functions #########
 
@@ -147,6 +147,11 @@ func getRandomItem():
 	
 	if dblist.size() < 1:
 		return
+	
+	if first:
+		first = false
+		offered_upgrades.append("upgrade 1")
+		return "upgrade 1"
 	
 	# pick a random item from list of available ones
 	var randomItem=dblist.pick_random()
@@ -272,6 +277,7 @@ func _on_upgrade_options_3_pressed():
 
 # Called when next level button is pressed
 func _on_next_level_pressed():
+	
 	
 	# default upgrade is none
 	var current_upgrade: String = "none"

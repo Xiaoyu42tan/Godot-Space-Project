@@ -41,7 +41,7 @@ animations = [{
 [node name="ThickBlaster" type="Area2D"]
 rotation = 1.5708
 script = ExtResource("1_xura0")
-fire_rate = 0.5
+fire_rate = 0.3
 projectile_tscn = ExtResource("2_w631l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

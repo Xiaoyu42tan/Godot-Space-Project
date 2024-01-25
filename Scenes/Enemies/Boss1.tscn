@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://grthyrhy378i"]
+[gd_scene load_steps=14 format=3 uid="uid://grthyrhy378i"]
 
 [ext_resource type="Script" path="res://Scripts/Enemy Scripts/Boss1.gd" id="1_gu36k"]
 [ext_resource type="Texture2D" uid="uid://brc8fn4j46iyx" path="res://Sprites/Enemy/Boss1Damaged.png" id="2_7po5h"]
@@ -9,9 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bo7etjs2vl81y" path="res://Scenes/Components/PathfindComponent.tscn" id="7_3mf5n"]
 [ext_resource type="PackedScene" uid="uid://b72r5cu2ik1sv" path="res://Scenes/Components/SightComponent.tscn" id="8_vaj1y"]
 [ext_resource type="PackedScene" uid="uid://bjrgoe3hux3j3" path="res://Scenes/Components/WeaponComponent.tscn" id="9_vp6hc"]
-[ext_resource type="PackedScene" uid="uid://cfky140yn5phm" path="res://Scenes/Weapons/EnergyBlaster.tscn" id="10_dvkgp"]
 [ext_resource type="PackedScene" uid="uid://bm2uvcvn5etk1" path="res://Scenes/Weapons/BulletShooter.tscn" id="10_hdjjy"]
-[ext_resource type="PackedScene" uid="uid://cw3w33kirfyn3" path="res://Scenes/Weapons/ThickBlaster.tscn" id="11_m581c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6j7ua"]
 animations = [{
@@ -42,7 +40,7 @@ radius = 20.0
 collision_layer = 8
 collision_mask = 11
 script = ExtResource("1_gu36k")
-enemy_worth = 500
+enemy_worth = 100
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 rotation = 1.5708
@@ -79,33 +77,44 @@ view_distance = 100.0
 
 [node name="WeaponComponent3" parent="." node_paths=PackedStringArray("weapon") instance=ExtResource("9_vp6hc")]
 position = Vector2(21, 0)
-weapon = NodePath("EnergyBlaster")
+weapon = NodePath("BulletShooter")
 
-[node name="EnergyBlaster" parent="WeaponComponent3" instance=ExtResource("10_dvkgp")]
-position = Vector2(1, 0)
+[node name="BulletShooter" parent="WeaponComponent3" instance=ExtResource("10_hdjjy")]
 
 [node name="WeaponComponent2" parent="." node_paths=PackedStringArray("weapon") instance=ExtResource("9_vp6hc")]
-position = Vector2(19, -7)
+position = Vector2(19, -6)
 weapon = NodePath("BulletShooter")
 
 [node name="BulletShooter" parent="WeaponComponent2" instance=ExtResource("10_hdjjy")]
 
 [node name="WeaponComponent" parent="." node_paths=PackedStringArray("weapon") instance=ExtResource("9_vp6hc")]
-position = Vector2(19, 7)
+position = Vector2(19, 6)
 weapon = NodePath("BulletShooter")
 
 [node name="BulletShooter" parent="WeaponComponent" instance=ExtResource("10_hdjjy")]
 
 [node name="WeaponComponent4" parent="." node_paths=PackedStringArray("weapon") instance=ExtResource("9_vp6hc")]
-position = Vector2(15, 14)
-weapon = NodePath("ThickBlaster")
+position = Vector2(17, 11)
+weapon = NodePath("BulletShooter")
 
-[node name="ThickBlaster" parent="WeaponComponent4" instance=ExtResource("11_m581c")]
+[node name="BulletShooter" parent="WeaponComponent4" instance=ExtResource("10_hdjjy")]
 
 [node name="WeaponComponent5" parent="." node_paths=PackedStringArray("weapon") instance=ExtResource("9_vp6hc")]
-position = Vector2(15, -14)
-weapon = NodePath("ThickBlaster")
+position = Vector2(17, -11)
+weapon = NodePath("BulletShooter")
 
-[node name="ThickBlaster" parent="WeaponComponent5" instance=ExtResource("11_m581c")]
+[node name="BulletShooter" parent="WeaponComponent5" instance=ExtResource("10_hdjjy")]
+
+[node name="WeaponComponent6" parent="." node_paths=PackedStringArray("weapon") instance=ExtResource("9_vp6hc")]
+position = Vector2(14, 16)
+weapon = NodePath("BulletShooter")
+
+[node name="BulletShooter" parent="WeaponComponent6" instance=ExtResource("10_hdjjy")]
+
+[node name="WeaponComponent7" parent="." node_paths=PackedStringArray("weapon") instance=ExtResource("9_vp6hc")]
+position = Vector2(14, -16)
+weapon = NodePath("BulletShooter")
+
+[node name="BulletShooter" parent="WeaponComponent7" instance=ExtResource("10_hdjjy")]
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

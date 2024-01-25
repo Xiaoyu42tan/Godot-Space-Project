@@ -77,7 +77,11 @@ func on_can_see_player():
 
 # death
 func onDeath():
+	if !is_dead:
+		Manager.player_money += enemy_worth
+	
 	is_dead = true
+	Manager.boss1_died = true
 	
 	# remove colliders
 	$CollisionShape2D.queue_free()

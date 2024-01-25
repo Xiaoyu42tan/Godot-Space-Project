@@ -92,6 +92,9 @@ func redAlert(sight_component: SightComponent):
 	effect_instance.position = get_global_transform().get_origin() + Vector2(0, -10)
 	get_tree().current_scene.add_child(effect_instance)
 	
+	# get alerted
+	has_seen_player = true
+	
 	# alert all enemies in range
 	for enemy: MyEnemyBody in sight_component.allies_in_range:
 		if enemy != self && enemy.has_seen_player == false:

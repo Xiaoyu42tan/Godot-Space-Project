@@ -7,7 +7,9 @@ signal pathfind_signal
 
 # how frequently we want the pathfinding alg to run
 # for all entities with pathfinding
-@export var pathfind_freq: float = 0.5
+@export var pathfind_freq: float = 0.2
+
+
 
 var pathfind_timer: Timer
 
@@ -46,3 +48,4 @@ func _ready():
 # saving computation time
 func _on_pathfind_timer_timeout():
 	pathfind_signal.emit()
+

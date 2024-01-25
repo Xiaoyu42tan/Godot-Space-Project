@@ -1,0 +1,135 @@
+[gd_scene load_steps=7 format=3 uid="uid://bqlbx51oketbq"]
+
+[ext_resource type="PackedScene" uid="uid://crci032yq4fo6" path="res://Scenes/Enemies/RedEnemyTurret.tscn" id="1_c0qyk"]
+[ext_resource type="PackedScene" uid="uid://bvojblgathx3m" path="res://Scenes/Enemies/Diamond_Enemy.tscn" id="2_5t78t"]
+[ext_resource type="PackedScene" uid="uid://4umb6fwyg1ax" path="res://Scenes/Enemies/SemicircleEnemy.tscn" id="3_r4yvn"]
+[ext_resource type="PackedScene" uid="uid://i50ur55hpmhl" path="res://Scenes/Enemies/enemy1.tscn" id="4_6gdo0"]
+[ext_resource type="PackedScene" uid="uid://dq1d5ip10tnn5" path="res://Scenes/Enemies/MeleeEnemy.tscn" id="5_t67r0"]
+[ext_resource type="PackedScene" uid="uid://c6yn3mb0ybjoa" path="res://Scenes/Enemies/SquareEnemy.tscn" id="6_v3aii"]
+
+[node name="Stage1Enemies" type="Node2D"]
+
+[node name="RedEnemyTurret" parent="." instance=ExtResource("1_c0qyk")]
+position = Vector2(30, -160)
+rotation = 1.5708
+
+[node name="RedEnemyTurret4" parent="." instance=ExtResource("1_c0qyk")]
+position = Vector2(329, -96)
+rotation = 3.14159
+
+[node name="RedEnemyTurret5" parent="." instance=ExtResource("1_c0qyk")]
+position = Vector2(332, -194)
+rotation = 3.14159
+
+[node name="RedEnemyTurret2" parent="." instance=ExtResource("1_c0qyk")]
+position = Vector2(42, 163)
+rotation = 4.71239
+
+[node name="Diamond Enemy" parent="." instance=ExtResource("2_5t78t")]
+position = Vector2(312, -138)
+rotation = 6.55478
+
+[node name="Diamond Enemy2" parent="." instance=ExtResource("2_5t78t")]
+position = Vector2(313, -155)
+rotation = 6.06493
+
+[node name="SemicircleEnemy" parent="." instance=ExtResource("3_r4yvn")]
+position = Vector2(348, 183)
+rotation = 3.14159
+
+[node name="SemicircleEnemy2" parent="." instance=ExtResource("3_r4yvn")]
+position = Vector2(348, 152)
+rotation = 3.14159
+
+[node name="SemicircleEnemy7" parent="." instance=ExtResource("3_r4yvn")]
+position = Vector2(342, -16)
+rotation = 3.14159
+
+[node name="Enemy7" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(25, -182)
+rotation = 1.316
+
+[node name="Enemy8" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(51, -181)
+rotation = 2.20032
+
+[node name="Enemy9" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(72, -179)
+rotation = 2.70887
+
+[node name="Enemy10" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(82, -167)
+rotation = 3.07513
+
+[node name="Enemy11" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(90, -183)
+rotation = 2.95123
+
+[node name="Enemy12" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(72, 160)
+rotation = 3.17717
+
+[node name="Enemy13" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(78, 136)
+rotation = 2.20032
+
+[node name="Enemy14" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(73, 180)
+rotation = 4.41804
+
+[node name="Enemy15" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(26, 167)
+rotation = 4.73174
+
+[node name="Enemy16" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(86, 152)
+rotation = 3.42064
+
+[node name="MeleeEnemy" parent="." instance=ExtResource("5_t67r0")]
+position = Vector2(72, -140)
+rotation = 0.0649893
+
+[node name="SquareEnemy7" parent="." instance=ExtResource("6_v3aii")]
+position = Vector2(283, -170)
+rotation = 4.45058
+
+[node name="SquareEnemy8" parent="." instance=ExtResource("6_v3aii")]
+position = Vector2(301, -171)
+rotation = 4.97418
+
+[node name="SquareEnemy9" parent="." instance=ExtResource("6_v3aii")]
+position = Vector2(302, -120)
+rotation = 7.59217
+
+[node name="SquareEnemy10" parent="." instance=ExtResource("6_v3aii")]
+position = Vector2(283, -118)
+rotation = 8.11577
+
+[node name="Enemy17" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(360, -55)
+rotation = 2.87979
+
+[node name="Enemy18" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(362, 24)
+rotation = 2.87979
+
+[node name="Enemy19" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(376, 7)
+
+[node name="Enemy20" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(377, -10)
+
+[node name="Enemy21" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(377, -27)
+
+[node name="Enemy22" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(205, 172)
+rotation = 0.785397
+
+[node name="Enemy24" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(309, 138)
+rotation = 2.09439
+
+[node name="Enemy23" parent="." instance=ExtResource("4_6gdo0")]
+position = Vector2(252, 107)
+rotation = 1.309

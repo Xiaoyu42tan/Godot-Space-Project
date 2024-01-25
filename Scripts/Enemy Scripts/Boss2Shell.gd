@@ -15,7 +15,7 @@ extends MyEnemyBody
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var hitbox_component: HitboxComponent = $HitboxComponent
 
-@onready var boss2: MyEnemyBody = get_tree().current_scene.get_node("Boss2")
+@onready var boss2: MyEnemyBody = get_parent().get_node("Boss2")
 
 
 

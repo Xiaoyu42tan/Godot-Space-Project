@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://cytueldhukhkk"]
+[gd_scene load_steps=11 format=3 uid="uid://cytueldhukhkk"]
 
 [ext_resource type="Script" path="res://Scripts/Level Scripts/Level_1.gd" id="1_fr4vf"]
+[ext_resource type="Texture2D" uid="uid://bteck3s0ogtxs" path="res://Sprites/Others/LevelBackground.png" id="2_mlf30"]
 [ext_resource type="TileSet" uid="uid://dcmulqhgkngjh" path="res://OurTileset.tres" id="3_re42b"]
 [ext_resource type="Texture2D" uid="uid://ipmhr83c38uf" path="res://Sprites/Healthbar.png" id="4_w3d5v"]
 [ext_resource type="Texture2D" uid="uid://bjmje8nyb6gkl" path="res://Sprites/Healthbar2.png" id="5_hrqf6"]
@@ -12,6 +13,11 @@
 
 [node name="Level_1" type="Node"]
 script = ExtResource("1_fr4vf")
+
+[node name="LevelBackground" type="Sprite2D" parent="."]
+position = Vector2(-375, -129)
+scale = Vector2(307.25, 182)
+texture = ExtResource("2_mlf30")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("3_re42b")
@@ -53,6 +59,7 @@ texture_progress = ExtResource("5_hrqf6")
 
 [node name="RedEnemyTurret" parent="." instance=ExtResource("8_m7yfc")]
 position = Vector2(-293, -145)
+rotation = -1.57079
 
 [node name="LevelObjective" parent="." instance=ExtResource("7_fe2p6")]
 position = Vector2(-149, -34)

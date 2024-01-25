@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4mxh7efpefjy"]
+
+[ext_resource type="Texture2D" uid="uid://s181umof6t3q" path="res://Sprites/Others/Level Objective1.png" id="1_1ohsm"]
+[ext_resource type="Script" path="res://Scripts/Level Scripts/LevelCheckpoint.gd" id="1_c2gq0"]
+[ext_resource type="Texture2D" uid="uid://bpgsnya5khbrn" path="res://Sprites/Others/Level Objective2.png" id="2_i6mui"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mg0gl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1ohsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_i6mui")
+}],
+"loop": true,
+"name": &"End",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bypto"]
+radius = 8.0
+
+[node name="Checkpoint" type="Area2D"]
+script = ExtResource("1_c2gq0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(5.917, 1.183, 1, 1)
+sprite_frames = SubResource("SpriteFrames_mg0gl")
+animation = &"End"
+autoplay = "End"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bypto")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

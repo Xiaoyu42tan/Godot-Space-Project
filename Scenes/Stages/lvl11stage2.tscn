@@ -1,0 +1,141 @@
+[gd_scene load_steps=8 format=3 uid="uid://owbgkjuccw1i"]
+
+[ext_resource type="PackedScene" uid="uid://4umb6fwyg1ax" path="res://Scenes/Enemies/SemicircleEnemy.tscn" id="1_7roh7"]
+[ext_resource type="PackedScene" uid="uid://ew1ffv43qsgu" path="res://Scenes/Enemies/invis_enemy.tscn" id="2_m5ata"]
+[ext_resource type="PackedScene" uid="uid://3yexhhct74iq" path="res://Scenes/Enemies/InvertedEnemy.tscn" id="3_gre2d"]
+[ext_resource type="PackedScene" uid="uid://drh7ckrn0w3ej" path="res://Scenes/Enemies/InvertedSquare.tscn" id="4_spc5p"]
+[ext_resource type="PackedScene" uid="uid://cm8w6alymaado" path="res://Scenes/Enemies/InvertedTurret.tscn" id="5_13xa1"]
+[ext_resource type="PackedScene" uid="uid://dq1d5ip10tnn5" path="res://Scenes/Enemies/MeleeEnemy.tscn" id="6_ipbxm"]
+[ext_resource type="PackedScene" uid="uid://crci032yq4fo6" path="res://Scenes/Enemies/RedEnemyTurret.tscn" id="7_l5sk7"]
+
+[node name="stage2enemies" type="Node2D"]
+
+[node name="SemicircleEnemy7" parent="." instance=ExtResource("1_7roh7")]
+position = Vector2(496, -422)
+rotation = 4.71238
+
+[node name="SemicircleEnemy8" parent="." instance=ExtResource("1_7roh7")]
+position = Vector2(401, 68)
+rotation = 5.23598
+
+[node name="SemicircleEnemy9" parent="." instance=ExtResource("1_7roh7")]
+position = Vector2(378, 59)
+rotation = 5.23598
+
+[node name="SemicircleEnemy11" parent="." instance=ExtResource("1_7roh7")]
+position = Vector2(438, 55)
+rotation = 4.71238
+
+[node name="SemicircleEnemy10" parent="." instance=ExtResource("1_7roh7")]
+position = Vector2(469, 54)
+rotation = 4.45058
+
+[node name="invis enemy" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(435, -601)
+
+[node name="invis enemy4" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(492, -584)
+
+[node name="invis enemy2" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(471, -614)
+rotation = -2.7538
+
+[node name="invis enemy3" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(448, -578)
+rotation = -0.457013
+
+[node name="invis enemy6" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(471, -375)
+rotation = 1.83259
+
+[node name="invis enemy7" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(488, -376)
+rotation = 1.83259
+
+[node name="invis enemy8" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(511, -374)
+rotation = 1.0472
+
+[node name="invis enemy9" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(528, -374)
+rotation = 1.0472
+
+[node name="invis enemy10" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(499, -389)
+rotation = 1.57079
+
+[node name="invis enemy11" parent="." instance=ExtResource("2_m5ata")]
+position = Vector2(499, -363)
+rotation = 1.57079
+
+[node name="InvertedEnemy" parent="." instance=ExtResource("3_gre2d")]
+position = Vector2(454, -391)
+rotation = -3.09617
+
+[node name="InvertedEnemy3" parent="." instance=ExtResource("3_gre2d")]
+position = Vector2(472, -390)
+rotation = -1.62141
+
+[node name="InvertedEnemy13" parent="." instance=ExtResource("3_gre2d")]
+position = Vector2(521, -390)
+rotation = -1.62141
+
+[node name="InvertedEnemy2" parent="." instance=ExtResource("3_gre2d")]
+position = Vector2(536, -391)
+rotation = -0.0676832
+
+[node name="InvertedSquare" parent="." instance=ExtResource("4_spc5p")]
+position = Vector2(504, -148)
+rotation = -1.72812
+
+[node name="InvertedSquare2" parent="." instance=ExtResource("4_spc5p")]
+position = Vector2(393, -150)
+rotation = 5.07241
+
+[node name="InvertedSquare3" parent="." instance=ExtResource("4_spc5p")]
+position = Vector2(441, -149)
+rotation = -1.67901
+
+[node name="InvertedTurret" parent="." instance=ExtResource("5_13xa1")]
+position = Vector2(454, 71)
+rotation = -1.5154
+
+[node name="InvertedTurret2" parent="." instance=ExtResource("5_13xa1")]
+position = Vector2(427, 73)
+rotation = -1.85493
+
+[node name="InvertedTurret3" parent="." instance=ExtResource("5_13xa1")]
+position = Vector2(417, 51)
+rotation = -1.309
+
+[node name="MeleeEnemy5" parent="." instance=ExtResource("6_ipbxm")]
+position = Vector2(494, -188)
+rotation = -1.83259
+
+[node name="MeleeEnemy6" parent="." instance=ExtResource("6_ipbxm")]
+position = Vector2(475, -186)
+rotation = -1.309
+
+[node name="MeleeEnemy7" parent="." instance=ExtResource("6_ipbxm")]
+position = Vector2(455, -186)
+rotation = -1.309
+
+[node name="MeleeEnemy8" parent="." instance=ExtResource("6_ipbxm")]
+position = Vector2(435, -187)
+rotation = -1.309
+
+[node name="InvertedTurret16" parent="." instance=ExtResource("5_13xa1")]
+position = Vector2(456, -150)
+rotation = -1.309
+
+[node name="InvertedTurret18" parent="." instance=ExtResource("5_13xa1")]
+position = Vector2(408, -150)
+rotation = -1.309
+
+[node name="InvertedTurret17" parent="." instance=ExtResource("5_13xa1")]
+position = Vector2(488, -149)
+rotation = -1.57079
+
+[node name="RedEnemyTurret6" parent="." instance=ExtResource("7_l5sk7")]
+position = Vector2(496, -404)
+rotation = -1.57079

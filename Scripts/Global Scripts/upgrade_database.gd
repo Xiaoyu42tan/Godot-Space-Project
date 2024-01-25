@@ -35,7 +35,7 @@ var UPGRADES = {
 	"upgrade 1": {
 		
 		"displayname": "Max Health Up",
-		"details" : "Increase Max Health by 100",
+		"details" : "Restore Health and +1000 Max Health",
 		"texture" : heart_texture,
 		"disabled" : false,
 		"cost" : 100
@@ -47,7 +47,7 @@ var UPGRADES = {
 		"details" : "Press F to teleport towards your cursor",
 		"texture" : teleport_icon,
 		"disabled" : false,
-		"cost" : 700
+		"cost" : 1000
 	},
 	
 	"upgrade 3": {
@@ -56,7 +56,7 @@ var UPGRADES = {
 		"details" : "Adds a Blaster to your inventory",
 		"texture" : turret_weapon_texture,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 200
 		
 	
 	},
@@ -71,18 +71,18 @@ var UPGRADES = {
 	
 	"upgrade 5": {
 		"displayname": "Movement Speed Up",
-		"details" : "Increase your movement speed by 1.5",
+		"details" : "Increase your movement speed",
 		"texture" : move_speed_texture,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 200
 	},
 	
 	"upgrade 6": {
-		"displayname": "Unlock Turret Mode",
+		"displayname": "Turret Mode",
 		"details": "Hold SHIFT to go into Turret Mode",
 		"texture" : turret_icon,
 		"disabled" : false,
-		"cost" : 200
+		"cost" : 1000
 	},
 	
 	"upgrade 7": {
@@ -90,7 +90,7 @@ var UPGRADES = {
 		"details": "Adds a Thicc Blaster to your inventory",
 		"texture" : thicc_blaster_texture,
 		"disabled" : false,
-		"cost" : 200
+		"cost" : 300
 	},
 	
 	"upgrade 8": {
@@ -98,7 +98,7 @@ var UPGRADES = {
 		"details": "Adds an Energy Blaster to your inventory",
 		"texture" : energy_blaster_texture,
 		"disabled" : false,
-		"cost" : 200
+		"cost" : 500
 	},
 	
 	"upgrade 9": {
@@ -106,7 +106,7 @@ var UPGRADES = {
 		"details": "Adds a Ray Blaster to your inventory",
 		"texture" : raygun_texture,
 		"disabled" : false,
-		"cost" : 600
+		"cost" : 800
 	},
 	
 	"upgrade 10": {
@@ -114,7 +114,7 @@ var UPGRADES = {
 		"details": "Adds a Flame Blaster to your inventory",
 		"texture" : FLAME_BLASTER,
 		"disabled" : false,
-		"cost" : 300
+		"cost" : 800
 	},
 	
 	"upgrade 11": {
@@ -122,15 +122,15 @@ var UPGRADES = {
 		"details": "Adds an Inverted Blaster to your inventory",
 		"texture" : INVERTED_BLASTER,
 		"disabled" : false,
-		"cost" : 400
+		"cost" : 800
 	},
 	
 	"upgrade 12": {
-		"displayname": "Inverted Heavy Blaster",
+		"displayname": "Inverted Heavy",
 		"details": "Adds an Inverted Heavy Blaster to your inventory",
 		"texture" : INVERTED_HEAVY,
 		"disabled" : false,
-		"cost" : 400
+		"cost" : 1000
 	},
 	
 	"upgrade 13": {
@@ -138,7 +138,7 @@ var UPGRADES = {
 		"details": "Does not add a Blaster to your inventory",
 		"texture" : NOT_A_BLASTER,
 		"disabled" : false,
-		"cost" : 200
+		"cost" : 800
 	},
 	
 	"upgrade 14": {
@@ -146,7 +146,7 @@ var UPGRADES = {
 		"details": "Adds a Rapid Blaster to your inventory",
 		"texture" : RAPID_BLASTER,
 		"disabled" : false,
-		"cost" : 200
+		"cost" : 800
 	}
 	
 }

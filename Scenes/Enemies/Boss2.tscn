@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://bo7etjs2vl81y" path="res://Scenes/Components/PathfindComponent.tscn" id="7_glkqb"]
 [ext_resource type="PackedScene" uid="uid://b72r5cu2ik1sv" path="res://Scenes/Components/SightComponent.tscn" id="8_uvsif"]
 [ext_resource type="PackedScene" uid="uid://bjrgoe3hux3j3" path="res://Scenes/Components/WeaponComponent.tscn" id="9_ur6ky"]
-[ext_resource type="PackedScene" path="res://Scenes/Weapons/NotABlaster.tscn" id="10_q5qhh"]
-[ext_resource type="PackedScene" path="res://Scenes/Weapons/InvertedBlaster.tscn" id="11_kk7ei"]
-[ext_resource type="PackedScene" path="res://Scenes/Weapons/InvertedHeavy.tscn" id="12_t3cgr"]
+[ext_resource type="PackedScene" uid="uid://b3ddmccpax12m" path="res://Scenes/Weapons/NotABlaster.tscn" id="10_q5qhh"]
+[ext_resource type="PackedScene" uid="uid://dimvu4wppvcxj" path="res://Scenes/Weapons/InvertedBlaster.tscn" id="11_kk7ei"]
+[ext_resource type="PackedScene" uid="uid://cqeg556568csj" path="res://Scenes/Weapons/InvertedHeavy.tscn" id="12_t3cgr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_px0s5"]
 animations = [{

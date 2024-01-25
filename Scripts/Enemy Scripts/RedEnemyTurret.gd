@@ -82,6 +82,10 @@ func onDeath():
 	$CollisionShape2D.queue_free()
 	hitbox_component.queue_free()
 
+# override
+func orangeAlert():
+	redAlert(sight_component)
+
 
 func onHurt():
 	if !has_seen_player:

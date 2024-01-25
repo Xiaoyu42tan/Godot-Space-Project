@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://ckyhxjfmlarsi"]
+[gd_scene load_steps=10 format=3 uid="uid://ckyhxjfmlarsi"]
 
 [ext_resource type="Script" path="res://Scripts/Level Scripts/Level_2.gd" id="1_eyilm"]
+[ext_resource type="Texture2D" uid="uid://bteck3s0ogtxs" path="res://Sprites/Others/LevelBackground.png" id="2_rsccy"]
 [ext_resource type="TileSet" uid="uid://dcmulqhgkngjh" path="res://OurTileset.tres" id="2_sy0t6"]
 [ext_resource type="PackedScene" uid="uid://i50ur55hpmhl" path="res://Scenes/Enemies/enemy1.tscn" id="3_lt4t0"]
 [ext_resource type="PackedScene" uid="uid://qpmoiutjx3ki" path="res://Scenes/Levels/LevelObjective.tscn" id="4_n7u6j"]
@@ -11,6 +12,11 @@
 
 [node name="Level_2" type="Node"]
 script = ExtResource("1_eyilm")
+
+[node name="LevelBackground" type="Sprite2D" parent="."]
+position = Vector2(-61, -74)
+scale = Vector2(307.25, 182)
+texture = ExtResource("2_rsccy")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("2_sy0t6")

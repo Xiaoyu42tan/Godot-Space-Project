@@ -11,6 +11,7 @@ height = 6.0
 [node name="HotBullet" type="Area2D"]
 script = ExtResource("1_d53pf")
 explosion = ExtResource("2_28igd")
+proj_damage = 40
 proj_range = 150.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

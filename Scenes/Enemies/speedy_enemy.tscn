@@ -52,8 +52,8 @@ shape = SubResource("CircleShape2D_u1ams")
 debug_color = Color(0.992157, 0, 0.262745, 0.419608)
 
 [node name="HealthComponent" parent="." instance=ExtResource("4_lei7c")]
-health = 40
-max_health = 40
+health = 80
+max_health = 80
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("collision_shape", "health_component") instance=ExtResource("5_jxtay")]
 collision_layer = 32
@@ -68,7 +68,9 @@ shape = SubResource("CircleShape2D_xky50")
 friction = 200
 max_speed = 150
 acceleration = 2000
-rotation_accel = 30
+max_rotation_speed = 10.0
+rotation_accel = 40.0
+rotation_frict = 20.0
 
 [node name="PathfindComponent" parent="." instance=ExtResource("7_r7dog")]
 

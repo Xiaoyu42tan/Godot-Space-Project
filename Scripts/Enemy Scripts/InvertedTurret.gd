@@ -27,7 +27,7 @@ func decideInput():
 	
 	
 	# if enemy has been aggroed
-	if player != null && has_seen_player:
+	if player != null:
 		# if we can rotate such that 
 		# we have line of sight on player
 		# UNIQUE: shoot player through walls

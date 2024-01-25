@@ -31,6 +31,12 @@ const RAPID_BLASTER = preload("res://Inventory Items/Items/RapidBlaster.tres")
 var player_money: int = 0
 
 
+# bugfix
+var boss1_died: bool = false
+var boss2_died: bool = false
+
+
+
 ######### my functions #########
 
 # call deferred, because otherwise godot 4.2 complains
@@ -53,7 +59,7 @@ func nextLevel(upgrade: String):
 	player_node.global_position = Vector2.ZERO
 	
 	# reset player health
-	player_node.health_component.health = player_node.health_component.max_health
+	#restore_health()
 	
 	call_deferred("nextLevelDeferred")
 
@@ -66,12 +72,12 @@ func nextLevelDeferred():
 		str((get_tree().current_scene.name.to_int())+1)+ ".tscn"
 	)
 
-# functionality function for character upgrading
+# function for character upgrading
 func upgradePlayer(upgrade):
 	match upgrade:
 		"upgrade 1":
-			player_node.health_component.max_health += 100
-			#player_node.health_component.health=200
+			player_node.health_component.max_health += 1000
+			player_node.health_component.health = player_node.health_component.max_health
 		
 		"upgrade 2":
 			player_node.teleport_unlocked = true
@@ -84,8 +90,12 @@ func upgradePlayer(upgrade):
 			addToInventory(BULLET_SHOOTER)
 			
 		"upgrade 5":
-			player_node.move_component.max_speed *= 1.5
+			player_node.move_component.max_speed += 50
 			player_node.move_component.acceleration *= 1.5
+			player_node.move_component.friction += 200
+			
+			
+			
 			
 		"upgrade 6":
 			player_node.turret_mode_unlocked = true
@@ -119,7 +129,8 @@ func upgradePlayer(upgrade):
 		
 		# switch statement default (else):
 		_:
-			print("no upgrade selected")
+			pass
+			#print("no upgrade selected")
 
 func addToInventory(item: InventoryItem):
 	for i in range(player_node.inventory.items.size()):
@@ -128,7 +139,9 @@ func addToInventory(item: InventoryItem):
 			return
 
 func restore_health():
-	player_node.health_component.health = player_node.health_component.max_health
+	#player_node.health_component.health = player_node.health_component.max_health
+	print("overhealing")
+	player_node.health_component.health = 1000000
 
 ######### Godot functions #########
 

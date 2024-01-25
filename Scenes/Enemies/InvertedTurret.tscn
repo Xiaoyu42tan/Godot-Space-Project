@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://q70mr8ml54qa" path="res://Scenes/Components/MovementComponent.tscn" id="5_tlxfd"]
 [ext_resource type="PackedScene" uid="uid://b72r5cu2ik1sv" path="res://Scenes/Components/SightComponent.tscn" id="6_agy23"]
 [ext_resource type="PackedScene" uid="uid://bjrgoe3hux3j3" path="res://Scenes/Components/WeaponComponent.tscn" id="8_gtsns"]
-[ext_resource type="PackedScene" path="res://Scenes/Weapons/InvertedBlaster.tscn" id="9_lbx6o"]
+[ext_resource type="PackedScene" uid="uid://dimvu4wppvcxj" path="res://Scenes/Weapons/InvertedBlaster.tscn" id="9_lbx6o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n2hdy"]
 animations = [{

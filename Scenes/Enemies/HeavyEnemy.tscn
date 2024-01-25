@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b72r5cu2ik1sv" path="res://Scenes/Components/SightComponent.tscn" id="6_cbjsm"]
 [ext_resource type="PackedScene" uid="uid://bo7etjs2vl81y" path="res://Scenes/Components/PathfindComponent.tscn" id="7_86lgy"]
 [ext_resource type="PackedScene" uid="uid://bjrgoe3hux3j3" path="res://Scenes/Components/WeaponComponent.tscn" id="9_3wld7"]
-[ext_resource type="PackedScene" uid="uid://dj86gogmclvs5" path="res://Scenes/Weapons/RapidBlaster.tscn" id="10_8hg04"]
+[ext_resource type="PackedScene" uid="uid://syo785i6hokg" path="res://Scenes/Weapons/RapidBlaster.tscn" id="10_8hg04"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qwmj2"]
 animations = [{
@@ -52,6 +52,8 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_fp7f1")
 
 [node name="HealthComponent" parent="." instance=ExtResource("3_2e5mg")]
+health = 300
+max_health = 300
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("collision_shape", "health_component") instance=ExtResource("4_lhdyo")]
 collision_layer = 32
@@ -68,7 +70,7 @@ max_speed = 70
 aim_accuracy_angle = 15
 
 [node name="SightComponent" parent="." instance=ExtResource("6_cbjsm")]
-shoot_distance = 115.0
+shoot_distance = 130.0
 
 [node name="PathfindComponent" parent="." instance=ExtResource("7_86lgy")]
 

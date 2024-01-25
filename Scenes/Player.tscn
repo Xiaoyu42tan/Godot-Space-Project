@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bjn8gj6krihfa" path="res://Sprites/Player/PlayerDamaged.png" id="3_ku120"]
 [ext_resource type="Texture2D" uid="uid://c6gixve6sf1o" path="res://Sprites/Player/Player.png" id="3_rud1o"]
 [ext_resource type="Resource" uid="uid://bdts36j3t4gef" path="res://Inventory Items/PlayerEquipment.tres" id="3_yd0ke"]
-[ext_resource type="PackedScene" path="res://Scenes/Effects/TeleportEffect.tscn" id="4_uaey4"]
+[ext_resource type="PackedScene" uid="uid://endvjbg26dex" path="res://Scenes/Effects/TeleportEffect.tscn" id="4_uaey4"]
 [ext_resource type="PackedScene" uid="uid://bjrgoe3hux3j3" path="res://Scenes/Components/WeaponComponent.tscn" id="7_0m7yy"]
 [ext_resource type="PackedScene" uid="uid://q70mr8ml54qa" path="res://Scenes/Components/MovementComponent.tscn" id="10_p5vso"]
 [ext_resource type="PackedScene" uid="uid://jtvlcehy0nfl" path="res://Scenes/Components/HealthComponent.tscn" id="10_u55m1"]
@@ -40,6 +40,7 @@ collision_mask = 10
 script = ExtResource("1_rohca")
 inventory = ExtResource("2_xg2n4")
 equipment = ExtResource("3_yd0ke")
+teleport_freq = 0.5
 teleport_effect = ExtResource("4_uaey4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -56,8 +57,8 @@ animation = &"Idle"
 zoom = Vector2(4.069, 4.069)
 
 [node name="HealthComponent" parent="." instance=ExtResource("10_u55m1")]
-health = 500
-max_health = 500
+health = 2000
+max_health = 2000
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("collision_shape", "health_component") instance=ExtResource("11_18h0j")]
 collision_layer = 64
