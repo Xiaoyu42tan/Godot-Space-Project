@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bvojblgathx3m" path="res://Scenes/Enemies/Diamond_Enemy.tscn" id="10_esbxb"]
 [ext_resource type="PackedScene" uid="uid://sp44a3aquuw5" path="res://Scenes/Enemies/speedy_enemy.tscn" id="10_pp20l"]
 [ext_resource type="PackedScene" uid="uid://c6yn3mb0ybjoa" path="res://Scenes/Enemies/SquareEnemy.tscn" id="11_87u4e"]
-[ext_resource type="PackedScene" path="res://Scenes/Enemies/FireEnemy.tscn" id="12_w1eiy"]
+[ext_resource type="PackedScene" uid="uid://sinkpvjufnfj" path="res://Scenes/Enemies/FireEnemy.tscn" id="12_w1eiy"]
 
 [node name="Level_8" type="Node"]
 script = ExtResource("1_qp322")

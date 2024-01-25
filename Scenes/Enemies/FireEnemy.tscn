@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b72r5cu2ik1sv" path="res://Scenes/Components/SightComponent.tscn" id="6_w0m3q"]
 [ext_resource type="PackedScene" uid="uid://bo7etjs2vl81y" path="res://Scenes/Components/PathfindComponent.tscn" id="7_grdc1"]
 [ext_resource type="PackedScene" uid="uid://bjrgoe3hux3j3" path="res://Scenes/Components/WeaponComponent.tscn" id="9_3thj0"]
-[ext_resource type="PackedScene" uid="uid://b17q7jsbfehls" path="res://Scenes/Weapons/FlameBlaster.tscn" id="10_ykkjk"]
+[ext_resource type="PackedScene" path="res://Scenes/Weapons/FlameBlaster.tscn" id="10_ykkjk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gfpd2"]
 animations = [{

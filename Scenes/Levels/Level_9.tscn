@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bvojblgathx3m" path="res://Scenes/Enemies/Diamond_Enemy.tscn" id="12_u66hw"]
 [ext_resource type="PackedScene" path="res://Scenes/Enemies/MeleeEnemy.tscn" id="13_opxdn"]
 [ext_resource type="PackedScene" path="res://Scenes/Enemies/HeavyEnemy.tscn" id="14_537lu"]
-[ext_resource type="PackedScene" path="res://Scenes/Enemies/FireEnemy.tscn" id="15_31huj"]
+[ext_resource type="PackedScene" uid="uid://sinkpvjufnfj" path="res://Scenes/Enemies/FireEnemy.tscn" id="15_31huj"]
 
 [node name="Level_9" type="Node"]
 script = ExtResource("1_2n8in")
