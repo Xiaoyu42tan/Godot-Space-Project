@@ -52,6 +52,8 @@ shape = SubResource("CircleShape2D_u1ams")
 debug_color = Color(0.992157, 0, 0.262745, 0.419608)
 
 [node name="HealthComponent" parent="." instance=ExtResource("4_y0fm1")]
+health = 120
+max_health = 120
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("collision_shape", "health_component") instance=ExtResource("5_8ishb")]
 collision_layer = 32

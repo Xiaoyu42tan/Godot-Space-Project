@@ -1,9 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://dj86gogmclvs5"]
+[gd_scene load_steps=9 format=3 uid="uid://syo785i6hokg"]
 
 [ext_resource type="Script" path="res://Scripts/Weapon Scripts/RapidBlaster.gd" id="1_blk8h"]
 [ext_resource type="Texture2D" uid="uid://ckcrqc0iqfdcq" path="res://Sprites/Weapons/RapidBlaster.png" id="2_473tk"]
 [ext_resource type="Texture2D" uid="uid://bvqfglo1tfo6x" path="res://Sprites/Weapons/RapidBlasterFire1.png" id="2_c4egb"]
-[ext_resource type="PackedScene" uid="uid://d1r7ma1urmvn0" path="res://Scenes/Projectiles/RapidBullet.tscn" id="2_pibk8"]
+[ext_resource type="PackedScene" path="res://Scenes/Projectiles/RapidBullet.tscn" id="2_pibk8"]
 [ext_resource type="Texture2D" uid="uid://dvnefnnike5cm" path="res://Sprites/Weapons/RapidBlasterFire2.png" id="3_vccwb"]
 [ext_resource type="Texture2D" uid="uid://cahr4v3f4jwq5" path="res://Sprites/Weapons/RapidBlasterFire3.png" id="4_njw3h"]
 

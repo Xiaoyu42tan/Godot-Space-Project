@@ -47,7 +47,7 @@ var UPGRADES = {
 		"details" : "Press F to teleport towards your cursor",
 		"texture" : teleport_icon,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 700
 	},
 	
 	"upgrade 3": {
@@ -82,7 +82,7 @@ var UPGRADES = {
 		"details": "Hold SHIFT to go into Turret Mode",
 		"texture" : turret_icon,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 200
 	},
 	
 	"upgrade 7": {
@@ -90,7 +90,7 @@ var UPGRADES = {
 		"details": "Adds a Thicc Blaster to your inventory",
 		"texture" : thicc_blaster_texture,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 200
 	},
 	
 	"upgrade 8": {
@@ -98,7 +98,7 @@ var UPGRADES = {
 		"details": "Adds an Energy Blaster to your inventory",
 		"texture" : energy_blaster_texture,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 200
 	},
 	
 	"upgrade 9": {
@@ -106,7 +106,7 @@ var UPGRADES = {
 		"details": "Adds a Ray Blaster to your inventory",
 		"texture" : raygun_texture,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 600
 	},
 	
 	"upgrade 10": {
@@ -114,7 +114,7 @@ var UPGRADES = {
 		"details": "Adds a Flame Blaster to your inventory",
 		"texture" : FLAME_BLASTER,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 300
 	},
 	
 	"upgrade 11": {
@@ -122,7 +122,7 @@ var UPGRADES = {
 		"details": "Adds an Inverted Blaster to your inventory",
 		"texture" : INVERTED_BLASTER,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 400
 	},
 	
 	"upgrade 12": {
@@ -130,7 +130,7 @@ var UPGRADES = {
 		"details": "Adds an Inverted Heavy Blaster to your inventory",
 		"texture" : INVERTED_HEAVY,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 400
 	},
 	
 	"upgrade 13": {
@@ -138,7 +138,7 @@ var UPGRADES = {
 		"details": "Does not add a Blaster to your inventory",
 		"texture" : NOT_A_BLASTER,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 200
 	},
 	
 	"upgrade 14": {
@@ -146,7 +146,7 @@ var UPGRADES = {
 		"details": "Adds a Rapid Blaster to your inventory",
 		"texture" : RAPID_BLASTER,
 		"disabled" : false,
-		"cost" : 100
+		"cost" : 200
 	}
 	
 }

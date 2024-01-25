@@ -1,6 +1,6 @@
 extends Node
 
-@onready var level_obj = $LevelObjective
+
 
 @onready var boss_1 = $Boss1
 
@@ -9,10 +9,10 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-
+	level_objective.visible=false
 	# add the stored player node to level
 	add_child(Manager.player_node)
 
 func _process(delta):
-	if boss_1.is_dead:
+	if boss_1 == null:
 		level_objective.visible = true

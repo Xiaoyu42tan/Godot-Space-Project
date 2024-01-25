@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dt7nk78oytpxl"]
+[gd_scene load_steps=10 format=3 uid="uid://ofjbvxmseks4"]
 
 [ext_resource type="Script" path="res://Scripts/Weapon Scripts/Rayblaster.gd" id="1_nl3bo"]
-[ext_resource type="PackedScene" uid="uid://des53pa0w1sps" path="res://Scenes/Projectiles/RayBullet.tscn" id="2_a4jpg"]
+[ext_resource type="PackedScene" path="res://Scenes/Projectiles/RayBullet.tscn" id="2_a4jpg"]
 [ext_resource type="Texture2D" uid="uid://1vci2r5wetiw" path="res://Sprites/Weapons/RaygunFire1.png" id="3_nkh0d"]
 [ext_resource type="Texture2D" uid="uid://b2ul0oxlwgut3" path="res://Sprites/Weapons/RaygunFire2.png" id="4_qy7bg"]
 [ext_resource type="Texture2D" uid="uid://b0prh0rduq4sj" path="res://Sprites/Weapons/RaygunFire3.png" id="5_i2s0v"]
@@ -41,7 +41,7 @@ animations = [{
 [node name="RayBlaster" type="Area2D"]
 rotation = 1.5708
 script = ExtResource("1_nl3bo")
-fire_rate = 0.7
+fire_rate = 1.5
 projectile_tscn = ExtResource("2_a4jpg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

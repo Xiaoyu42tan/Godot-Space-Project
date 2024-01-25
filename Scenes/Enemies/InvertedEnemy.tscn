@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Enemy Scripts/InvertedEnemy.gd" id="1_ay16q"]
 [ext_resource type="Texture2D" uid="uid://dm4ltsjj0hspq" path="res://Sprites/Enemy/InvertedEnemyDamaged.png" id="1_w7h70"]
-[ext_resource type="PackedScene" uid="uid://endvjbg26dex" path="res://Scenes/Effects/TeleportEffect.tscn" id="2_7w08p"]
+[ext_resource type="PackedScene" path="res://Scenes/Effects/TeleportEffect.tscn" id="2_7w08p"]
 [ext_resource type="PackedScene" uid="uid://jtvlcehy0nfl" path="res://Scenes/Components/HealthComponent.tscn" id="2_gw512"]
 [ext_resource type="Texture2D" uid="uid://dhwgexqha7iwg" path="res://Sprites/Enemy/InvertedEnemy.png" id="2_y101r"]
 [ext_resource type="PackedScene" uid="uid://1supvjtsm3dy" path="res://Scenes/Components/HitboxComponent.tscn" id="3_28m7s"]
@@ -41,7 +41,9 @@ radius = 7.0
 collision_layer = 8
 collision_mask = 11
 script = ExtResource("1_ay16q")
+teleport_distance = 30.0
 teleport_effect = ExtResource("2_7w08p")
+enemy_worth = 60
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 rotation = 1.5708

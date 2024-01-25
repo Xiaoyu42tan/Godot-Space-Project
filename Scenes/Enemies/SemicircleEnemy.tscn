@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bo7etjs2vl81y" path="res://Scenes/Components/PathfindComponent.tscn" id="6_emiqh"]
 [ext_resource type="PackedScene" uid="uid://b72r5cu2ik1sv" path="res://Scenes/Components/SightComponent.tscn" id="7_bje2k"]
 [ext_resource type="PackedScene" uid="uid://bjrgoe3hux3j3" path="res://Scenes/Components/WeaponComponent.tscn" id="8_b23wb"]
-[ext_resource type="PackedScene" path="res://Scenes/Weapons/RayBlaster.tscn" id="10_pcqrn"]
+[ext_resource type="PackedScene" uid="uid://ofjbvxmseks4" path="res://Scenes/Weapons/RayBlaster.tscn" id="10_pcqrn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_75cvo"]
 animations = [{
