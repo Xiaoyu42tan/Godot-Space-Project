@@ -59,7 +59,7 @@ func nextLevel(upgrade: String):
 	player_node.global_position = Vector2.ZERO
 	
 	# reset player health
-	#restore_health()
+	restore_health()
 	
 	call_deferred("nextLevelDeferred")
 
@@ -76,7 +76,7 @@ func nextLevelDeferred():
 func upgradePlayer(upgrade):
 	match upgrade:
 		"upgrade 1":
-			player_node.health_component.max_health += 1000
+			player_node.health_component.max_health += 500
 			player_node.health_component.health = player_node.health_component.max_health
 		
 		"upgrade 2":
@@ -141,7 +141,9 @@ func addToInventory(item: InventoryItem):
 func restore_health():
 	#player_node.health_component.health = player_node.health_component.max_health
 	print("overhealing")
-	player_node.health_component.health = 1000000
+	player_node.health_component.health = 100000000
+	
+
 
 ######### Godot functions #########
 

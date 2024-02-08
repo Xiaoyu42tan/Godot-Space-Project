@@ -54,8 +54,8 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_tgnr7")
 
 [node name="HealthComponent" parent="." instance=ExtResource("4_ucec4")]
-health = 1000
-max_health = 1000
+health = 2000
+max_health = 2000
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("collision_shape", "health_component") instance=ExtResource("5_yvuwq")]
 collision_layer = 32

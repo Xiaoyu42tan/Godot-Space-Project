@@ -35,7 +35,7 @@ var UPGRADES = {
 	"upgrade 1": {
 		
 		"displayname": "Max Health Up",
-		"details" : "Restore Health and +1000 Max Health",
+		"details" : "Restore Health and +500 Max Health",
 		"texture" : heart_texture,
 		"disabled" : false,
 		"cost" : 100

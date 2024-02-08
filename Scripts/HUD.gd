@@ -15,12 +15,17 @@ var is_paused = false
 # init reference to next level button
 @onready var next_level = $GUI/UpgradeMenu/MarginContainer/VBoxContainer/NextLevel
 
+# init effect reference
+@export var cant_afford: PackedScene
 
 # init healthbar variable
 @onready var healthbar = $GUI/Healthbar
 
 # init money display
 @onready var money_display = $GUI/MoneyDisplay
+
+# init fade transition effect
+@onready var fade = $GUI/Fade
 
 
 # init reference to player
@@ -50,7 +55,6 @@ var offered_upgrades: Array[String] = []
 var first = true
 
 ######### my functions #########
-
 
 
 # toggle pause screen
@@ -230,6 +234,10 @@ func _process(delta):
 	updateHealthbar()
 	
 	updateMoney()
+	
+	# fade effect
+	if fade.modulate.a > 0:
+		fade.modulate.a -= 0.7 * delta
 
 
 ######### Godot signal functions #########
@@ -290,6 +298,12 @@ func _on_next_level_pressed():
 	
 	# if player cant afford 
 	if current_upgrade != "none" && current_upgrade_price > Manager.player_money:
+		var effect: Label = cant_afford.instantiate()
+		
+		add_child(effect)
+		
+		toggleUpgradePanel()
+		
 		return
 
 	resumeGame()

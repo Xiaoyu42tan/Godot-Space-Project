@@ -1,15 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://dlu086iuonjm7"]
+[gd_scene load_steps=8 format=3 uid="uid://dlu086iuonjm7"]
 
 [ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_le6ac"]
 [ext_resource type="Texture2D" uid="uid://ipmhr83c38uf" path="res://Sprites/Healthbar.png" id="1_q7lyp"]
 [ext_resource type="Texture2D" uid="uid://bjmje8nyb6gkl" path="res://Sprites/Healthbar2.png" id="2_mitvj"]
 [ext_resource type="Theme" uid="uid://cg51xn2o6bhqx" path="res://Themes/new_theme.tres" id="2_mqy5o"]
+[ext_resource type="PackedScene" uid="uid://cifg0c4wudc3m" path="res://Scenes/Effects/CantAfford.tscn" id="2_v5eq1"]
 [ext_resource type="PackedScene" uid="uid://0iim021blvjp" path="res://Scenes/upgrade_options.tscn" id="6_ra3gs"]
 [ext_resource type="PackedScene" uid="uid://by8kp5mp38pbm" path="res://Scenes/Inventory/InventoryUI.tscn" id="7_bqbh4"]
 
 [node name="HUD" type="CanvasLayer"]
 process_mode = 3
 script = ExtResource("1_le6ac")
+cant_afford = ExtResource("2_v5eq1")
 
 [node name="GUI" type="Control" parent="."]
 layout_mode = 3
@@ -169,6 +171,16 @@ text = "Proceed to Next Level"
 [node name="InventoryUI" parent="GUI" instance=ExtResource("7_bqbh4")]
 visible = false
 layout_mode = 1
+
+[node name="Fade" type="ColorRect" parent="GUI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
 
 [connection signal="pressed" from="GUI/PausedScreen/GridContainer/ResumeButtom" to="." method="_on_resume_buttom_pressed"]
 [connection signal="pressed" from="GUI/PausedScreen/GridContainer/MenuButton" to="." method="_on_menu_button_pressed"]

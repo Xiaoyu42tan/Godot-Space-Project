@@ -47,8 +47,8 @@ animation = &"Damaged"
 shape = SubResource("CircleShape2D_qi6si")
 
 [node name="HealthComponent" parent="." instance=ExtResource("3_mfc1f")]
-health = 1000
-max_health = 1000
+health = 2000
+max_health = 2000
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("collision_shape", "health_component") instance=ExtResource("4_dippt")]
 collision_layer = 32

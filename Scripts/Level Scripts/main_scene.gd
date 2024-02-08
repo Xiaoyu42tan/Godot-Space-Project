@@ -32,18 +32,33 @@ func resetInvAndEquipment():
 	
 	# give the player a default weapon to start
 	player_inventory.items[0] = BULLET_SHOOTER
-	#player_inventory.items[1] = TURRET_WEAPON
-	#player_inventory.items[2] = THICK_BLASTER
-	#player_inventory.items[3] = ENERGY_BLASTER
-	#player_inventory.items[4] = RAY_BLASTER
-	#
-#
-	#
-	#player_inventory.items[5] = FLAME_BLASTER
-	#player_inventory.items[6] = INVERTED_BLASTER
-	#player_inventory.items[7] = INVERTED_HEAVY
-	#player_inventory.items[8] = NOT_A_BLASTER
-	#player_inventory.items[9] = RAPID_BLASTER
+	player_inventory.items[1] = TURRET_WEAPON
+	player_inventory.items[2] = THICK_BLASTER
+	player_inventory.items[3] = ENERGY_BLASTER
+	player_inventory.items[4] = RAY_BLASTER
+	
+
+	
+	player_inventory.items[5] = FLAME_BLASTER
+	player_inventory.items[6] = INVERTED_BLASTER
+	player_inventory.items[7] = INVERTED_HEAVY
+	player_inventory.items[8] = NOT_A_BLASTER
+	player_inventory.items[9] = RAPID_BLASTER
+	
+	
+	player_inventory.items[10] = BULLET_SHOOTER
+	player_inventory.items[11] = TURRET_WEAPON
+	player_inventory.items[12] = THICK_BLASTER
+	player_inventory.items[13] = ENERGY_BLASTER
+	player_inventory.items[14] = RAY_BLASTER
+	
+
+	
+	player_inventory.items[15] = FLAME_BLASTER
+	player_inventory.items[16] = INVERTED_BLASTER
+	player_inventory.items[17] = INVERTED_HEAVY
+	player_inventory.items[18] = NOT_A_BLASTER
+	player_inventory.items[19] = RAPID_BLASTER
 	
 
 

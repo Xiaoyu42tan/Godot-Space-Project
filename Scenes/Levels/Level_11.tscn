@@ -21,7 +21,6 @@
 script = ExtResource("1_i3m0d")
 
 [node name="LevelBackground" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(472, -294)
 scale = Vector2(307.25, 182)
 texture = ExtResource("2_s4mqo")
@@ -84,10 +83,10 @@ position = Vector2(2022, -919)
 position = Vector2(169, -664)
 
 [node name="Checkpoint2" parent="." instance=ExtResource("22_g4aht")]
-position = Vector2(954, -817)
+position = Vector2(428, 83)
 
 [node name="Checkpoint3" parent="." instance=ExtResource("22_g4aht")]
-position = Vector2(427, 101)
+position = Vector2(957, -817)
 
 [node name="stage1enemies" type="Node2D" parent="."]
 

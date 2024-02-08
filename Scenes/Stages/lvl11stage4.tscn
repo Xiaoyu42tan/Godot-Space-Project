@@ -8,6 +8,7 @@
 
 [node name="Boss2Shell" parent="." instance=ExtResource("1_hic7x")]
 position = Vector2(1370, -818)
+rotation = 3.14159
 
 [node name="Boss2" parent="." instance=ExtResource("2_eohr5")]
 position = Vector2(1418, -815)

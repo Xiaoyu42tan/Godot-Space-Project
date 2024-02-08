@@ -13,6 +13,7 @@ var stage_2_enemies: Node2D
 var stage_3_enemies: Node2D
 var stage_4_enemies: Node2D
 
+@onready var hud = $HUD
 
 const LVL_11_STAGE_2 = preload("res://Scenes/Stages/lvl11stage2.tscn")
 const LVL_11_STAGE_3 = preload("res://Scenes/Stages/lvl11stage3.tscn")
@@ -43,6 +44,8 @@ func _process(_delta):
 func onCheckpt():
 	Manager.player_node.global_position = stage_2_spawn.global_position
 	
+	hud.fade.modulate.a = 1
+	
 	stage_1_enemies.queue_free()
 
 	stage_2_enemies = LVL_11_STAGE_2.instantiate()
@@ -54,6 +57,8 @@ func onCheckpt():
 func onCheckpt2():
 	Manager.player_node.global_position = stage_3_spawn.global_position
 	
+	hud.fade.modulate.a = 1
+	
 	if stage_2_enemies:
 		stage_2_enemies.queue_free()
 
@@ -64,6 +69,8 @@ func onCheckpt2():
 
 func onCheckpt3():
 	Manager.player_node.global_position = stage_4_spawn.global_position
+	
+	hud.fade.modulate.a = 1
 	
 	if stage_3_enemies:
 		stage_3_enemies.queue_free()
