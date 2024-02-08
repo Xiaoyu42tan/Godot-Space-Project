@@ -6,7 +6,7 @@ This was a personal project created alongside another programmer in an attempt t
 
 **Design Principles**:
 
-Spearheaded by my other collaborator, we recognise the importance of a good workflow when implementing content at the end of the project. Hence, we designed to use composition to create reusable components that allow us to create enemies and weapons simply by modifying these components and altering key values like damage. We also made use of singleton design principles by creating scripts that could manage game logic and level transitions by being omni-present throuhgout our game.
+We recognise the importance of a good workflow when implementing content at the end of the project. Hence, we designed to use composition to create reusable components that allow us to create enemies and weapons simply by modifying these components and altering key values like damage. We also made use of singleton design principles by creating scripts that could manage game logic and level transitions by being omni-present throuhgout our game.
 
 **Game Features**:
 
